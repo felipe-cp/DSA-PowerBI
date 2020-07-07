@@ -1,0 +1,15 @@
+Resumo do capítulo 3
+
+Parte1:
+O primeiro passo é definir qual será a fonte dos dados, nesse capítulo iniciamos fazendo o web scraping no PowerBI.
+Após conectar no site usando a URL, selecionamos a tabela que continha os dados desejados.
+É importante verificar as questões de formatação e fazer os ajustes necessários.
+O dataset escolhdo traz o PIB dos países entre 2015 e 2021, porém havia uma coluna para cada ano. Isso gera redundancia, fizemos o Pivot e transformamos todas as colunas em duas: Ano e PIB.
+
+Parte2:
+Na segunda parte do capítulo 3, aprendemos o modelo "Star Schema". Nesse modelo, o dataset se divide em Tabelas FATO e DIMENSÃO.
+As tabelas dimenção, possui a descrissão dos fatos.
+Por sua vez, a tabela fato possui o registro dos fatos.
+Há várias formas de fazer essa divisão, podendo variar de acordo com a necessidade e do projeto.
+O relacionamento entre as tabelas pode ocorrer de forma automática quando o PowerBI identifica as chaves. Nas tabelas dimenssão, é importante que não haja repetições no campo que for chave primária.
+Na tabela fato é prossível criar medidas, como fizemos no total de vendas, isso será extremamente útil para gerar as visualizações agrupadas.
